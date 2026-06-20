@@ -1,16 +1,7 @@
 {
-  "env": {
-    "OPENROUTER_API_KEY": "sk-or-your-key-here"
-  },
-  "agents": {
-    "defaults": {
-      "model": {
-        "primary": "openrouter/anthropic/claude-3.5-sonnet"
-      },
-      "models": {
-        "openrouter/anthropic/claude-3.5-sonnet": {},
-        "openrouter/meta-llama/llama-3-70b-instruct": {}
-      }
-    }
+  "provider": "openrouter",
+  "models": {
+    "default": "openrouter/anthropic/claude-3.5-sonnet",
+    "fallback": "openrouter/meta-llama/llama-3-70b-instruct"
   }
 }
